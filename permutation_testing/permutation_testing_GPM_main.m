@@ -43,9 +43,9 @@ num_subs = length(all_phenotype);
 %% calculate the true prediction correlation
 [true_prediction_r_work, true_prediction_r_null] = GPM_predict(all_phenotype, all_graph, all_covariate1, all_covariate2);
 
-num_iterations = 10000;                                                                                                                                 %number of iterations for permutation testing
+num_iterations = 10000;                                                                                                                      % number of iterations for permutation testing
 prediction_r_work = zeros(num_iterations,1);                prediction_r_null = zeros(num_iterations,1);
-prediction_r_work(1,1) = true_prediction_r_work;          prediction_r_null(1,1) = true_prediction_r_null;      % true predictions
+prediction_r_work(1,1) = true_prediction_r_work;          prediction_r_null(1,1) = true_prediction_r_null;                                   % true predictions
 
 %% permutations: random shuffling of data labels to create estimated distributions of the test statistic
 for it = 2:num_iterations
