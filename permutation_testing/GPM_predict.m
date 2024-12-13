@@ -68,9 +68,9 @@ end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% ---------------------(1) WORKING MODEL--------------------- 
-[r_work,p_work] = corr(y, yhat,'rows','complete');                                        % only r is needed, p value is not used (this is the one without permutations)
+[r_work,p_work] = corr(y, yhat,'rows','complete');                                          % only r is needed, p value is not used (this is the one without permutations)
 
 %% ---------------------(2) NULL MODEL--------------------- 
-[r_null,p_null] = corr(y, yhat_null,'rows','complete');                                     %only r is needed, p value is not used (this is the one without permutations)
+[r_null,p_null] = corr(y, yhat_null,'rows','complete');                                     % only r is needed, p value is not used (this is the one without permutations)
 
 end
